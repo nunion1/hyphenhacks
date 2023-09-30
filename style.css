@@ -1,8 +1,78 @@
 body{
-    background-color: aqua;
+    background-color: rgb(229, 134, 173);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
 
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+ul{
+    list-style: none;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: antiquewhite;
+}
+
+.logo{
+    padding-left: 1.8em;
+}
+
+.logo-text{
+    font-size: 2em;
+}
+
+.menubar{
+    width: 45%;
+    margin-left: 8.5em;  
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-items a{
+    color: black;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    transition: 0.4s;
+}
+
+.list-items a:hover{
+    color: black;
+}
+
+.burger{
+    height: 28px;
+    width: 32px;
+    display: none;
+}
+
+.layer,.layer2, .layer3{
+    background: black;
+    height: 4px;
+    margin-top: 4px;
+    border-radius: 10px;
+
+}
