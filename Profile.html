@@ -21,19 +21,63 @@
 
         </div>
         <div class = "logo">
-            <span class = "logo-text"><i class = "futuretutor" style = "margin-right: 0.1em"></i><span style= "color: rgb(20, 19, 19); font-size: 1.1em";>FUTURE TUTOR</span>
+           <a class="logo-link" href="index.html" ;><img class="logo-image" src="9k.png" /><span style="color: rgb(20, 19, 19); font-size: 1.1em" class="logo-text">FUTURE TUTOR </span></a>
         </div>
 
         <div class = "menubar">
             <ul class = "list">
                 <li class = "list-items"><a href="/Chat.html"> CHAT </a></li>
-                <li class = "list-items"><a href="/Profile.html"> PROFILE</a></li>
-                <li class = "list-items"><a href="/FindATutor.html"> FIND A TUTOR</a></li>
-                <li class = "list-items"><a href="/index.html"> HOME</a></li>
+
 
                 
             </ul>
         </div>
+        </nav>
+
+  <div class="inputField">
+      <label for="name">Name:</label><br>
+      <input type="text" id="userName" name="name"><br><br>
+     
+      <label for="grade">Grade:</label><br>
+      <input type="text" id="grade" name="grade"><br><br>
+
+      <label for="school">School:</label><br>
+      <input type="text" id="school" name="school"><br><br>
+
+      <label for="description">Please add a short description about yourself:</label><br>
+      <input type="text" id="description" name="description"><br><br>
+
+      <label for="classes">What classes can you tutor?:</label><br>
+      <span><p>
+        English: 
+        <input type="checkbox" id = englishBox> 
+        | History: 
+        <input type="checkbox" id = historyBox> 
+        | Math:
+        <input type="checkbox" id = mathBox> 
+        <br> 
+        Science:
+        <input type="checkbox" id = scienceBox>
+        | Spanish:
+        <input type="checkbox" id = spanishBox> 
+        | Chinese:
+        <input type="checkbox" id = chineseBox> 
+        <br>
+        French:
+        <input type="checkbox" id = frenchBox> 
+      </p><br><br></span>
+
+      <label for="imageLink">ImageLink:</label><br>
+      <input type="text" id="imageLink" name="imageLink"><br><br>
+
+      <label for="phoneNumber">Please enter your phone number | Note: Others will be able to see</label><br>
+      <input type="text" id="phoneNumber" name="phoneNumber"><br><br>
+
+      <label for="email">OR enter your email | Note: Others will be able to see</label><br>
+      <input type="text" id="email" name="email"><br><br>
+
+      <button onclick = "addData()" > Submit </button>
+  </div>
   </body>
   <script type = "text/javascript" src = "app.js"></script>
   <script type = "text/javascript" src= "products.json"></script>
@@ -46,5 +90,4 @@
 
   </main>
   <script src="app.js"></script>
-</body>
 </html>

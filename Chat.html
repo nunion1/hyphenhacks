@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1157713982757548156/1157729541586948116/9k.png?ex=6519ab28&is=651859a8&hm=f624dcbcf4279c3046873b072b40a96802a51b25966279e345cc6f06f64a3e54&" type="image/x-icon">
-    <style> </style>
+    <style>
+        #chat-box {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
 
+   
 
+    <nav class="navbar">
+        <div class="burger">
+            <div class="layer1"></div>
+            <div class="layer2"></div>
+            <div class="layer3"></div>
+        </div>
+        <div class = "logo">
+          <a class="logo-link" href="index.html" ;><img class="logo-image" src="9k.png" /><span style="color: rgb(20, 19, 19); font-size: 1.1em" class="logo-text">FUTURE TUTOR </span></a>
+       </div>
+        <div class="menubar">
+            <ul class="list">
+                <li class="list-items"><a href="/Profile.html"> PROFILE</a></li>
 
-  </head>
-  <body>
+            </ul>
+        </div>
+    </nav>
 
-    <nav class = "navbar">
-      <div class = "burger">
-          <div class = "layer1"></div>
-          <div class = "layer2"></div>
-          <div class = "layer3"></div>
+    <div id="chat-box"></div>
+    <input type="text" id="message" placeholder="Type your message..." />
+    <button id="send">Send</button>
 
-      </div>
-      <div class = "logo">
-          <span class = "logo-text"><i class = "futuretutor" style = "margin-right: 0.1em"></i><span style= "color: rgb(20, 19, 19); font-size: 1.1em";>FUTURE TUTOR</span>
-      </div>
+    <script>
+        // Store messages in an array
+        const messages = [];
 
-      <div class = "menubar">
-          <ul class = "list">
-              <li class = "list-items"><a href="/Chat.html"> CHAT </a></li>
-              <li class = "list-items"><a href="/Profile.html"> PROFILE</a></li>
-              <li class = "list-items"><a href="/FindATutor.html"> FIND A TUTOR</a></li>
-              <li class = "list-items"><a href="/index.html"> HOME</a></li>
+        // Function to display messages
+        function displayMessages() {
+            const chatBox = document.getElementById('chat-box');
+            chatBox.innerHTML = messages.join('<br>');
+        }
 
-              
-          </ul>
-      </div>
+        // Function to send a message
+        function sendMessage() {
+            const messageInput = document.getElementById('message');
+            const message = messageInput.value.trim();
 
-  </body>
+            if (message !== '') {
+                messages.push(message);
+                messageInput.value = '';
+                displayMessages();
+            }
+        }
 
-  <script type = "text/javascript" src = "app.js"></script>
-  <script type = "text/javascript" src= "products.json"></script>
+        // Event listener for the send button
+        document.getElementById('send').addEventListener('click', sendMessage);
 
- 
-  <main> 
-      
-      
+        // Event listener for pressing Enter key
+        document.getElementById('message').addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
 
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="products.json"></script>
 
-  </main>
-<script src="app.js"></script>
 </body>
 </html>

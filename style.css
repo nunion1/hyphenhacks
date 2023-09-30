@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(229, 134, 173);
+    background-color: rgb(87, 144, 168);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -35,16 +35,26 @@ ul{
 }
 
 .logo{
-    padding-left: 1.8em;
+    padding-left: 0em;
 }
-
+.logo-image{
+    border-radius: 100%;
+    height: 10vh;
+    
+}
+.logo-link{
+    display: flex;
+    align-items: center;
+}
 .logo-text{
     font-size: 2em;
 }
 
 .menubar{
-    width: 45%;
+    width: 50%;
     margin-left: 8.5em;  
+    padding-left: 500px;
+    padding-right: 10px;
 }
 
 .list{
@@ -74,5 +84,63 @@ ul{
     height: 4px;
     margin-top: 4px;
     border-radius: 10px;
+    padding-right: 4px;
 
+}
+
+
+
+.section1 .banner{
+    height: 170px;
+    width: 600px;
+    background: rgba(red, green, blue, alpha);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+    z-index: 8;
+}
+
+.banner h1{
+    font-size: 2em;
+}
+
+.banner a{
+    display: flex;
+    justify-content: center;
+    padding: 1em 2.5em;
+    font-size: 0.8em;
+    color: white;
+    background: #cb1515;
+    transition: all 0.3s;
+}
+
+.banner button{
+    display: flex;
+    justify-content: center;
+    padding: 1em 2.5em;
+    font-size: 0.8em;
+    color: white;
+    background: #cb1515;
+    transition: all 0.3s;
+}
+
+#personbox {
+    /* padding-top: 100px; */
+    scale: 1.5;
+    background-color: aliceblue;
+     height: auto;
+    width: 20%;
+    background-size: cover;
+     /*top: 1000px; */
+    margin-top: 1px;
+    margin: auto;
+    text-align: center;
+    line-height: 3;
 }

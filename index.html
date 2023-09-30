@@ -7,10 +7,20 @@
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1157713982757548156/1157729541586948116/9k.png?ex=6519ab28&is=651859a8&hm=f624dcbcf4279c3046873b072b40a96802a51b25966279e345cc6f06f64a3e54&" type="image/x-icon">
-    <style> </style>
+    
+    <style>
+        #person-box {
+            width: 300px;
+            height: 500px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+        }
+    </style>
 
   </head>
   <body>
+
+
 
     <nav class = "navbar">
         <div class = "burger">
@@ -19,34 +29,68 @@
             <div class = "layer3"></div>
 
         </div>
+        
         <div class = "logo">
-            <span class = "logo-text"><i class = "futuretutor" style = "margin-right: 0.1em"></i><span style= "color: rgb(106, 162, 187); font-size: 1.1em";>FUTURE TUTOR</span>
-        </div>
+          <a class="logo-link" href="index.html" ;><img class="logo-image" src="9k.png" /><span style="color: rgb(20, 19, 19); font-size: 1.1em" class="logo-text">FUTURE TUTOR </span></a>
+       </div>
 
         <div class = "menubar">
             <ul class = "list">
-                <li class = "list-items"><a href="/Chat.html"> CHAT </a></li>
-                <li class = "list-items"><a href="/Profile.html"> PROFILE</a></li>
-                <li class = "list-items"><a href="/FindATutor.html"> FIND A TUTOR</a></li>
-                <li class = "list-items"><a href="/index.html"> HOME</a></li>
+                <li class = "list-items">
+                    <a href="/Chat.html"> 
+                       <img src = "path/to/ChatIcon.jpeg" alt = "Chat Icon" style = "vertical-align: middle; margin-right: 5px;">
 
-                
+                <li class = "list-items"><a href="/Profile.html"> PROFILE </a></li>
+                <img src = Assets/ProfileIcon.jpeg
             </ul>
         </div>
+
+        <div class = "Profile">
+            <!-- <i class = "" -->
+
+            </nav>
+
+        
+
+        <!-- <button onclick = "loadFirst()" > Begin </button> -->
+
+        <section class = "section1">
+            <br><br><br>
+            <div id = "personbox">
+                <h1 id="nameEnd"></h1>
+                <!-- <img name=""> -->
+                <h2 id="schoolEnd"></h2>
+                <p id="descriptionEnd"></p>
+                <p id ="classesEnd"></p>
+                <!-- <h2 id = "numberEnd"></h2>
+                <h2 id = "emailEnd"></h2> -->
+            </div>
+            <div class="banner">
+                <!-- <h1>SWIPE LEFT OR RIGHT</h1> -->
+                <button onclick="saveCurrent()"> -> </button>
+                <button onclick = "loadNext()"> <- </button>
+            </div>
+        </section>
+
+
+
 
      
 
 
     <script type = "text/javascript" src = "app.js"></script>
     <script type = "text/javascript" src= "products.json"></script>
+    </nav>
 
    
     <main> 
         
-        
   
 
     </main>
+    <br>
 	<script src="app.js"></script>
+    <h1>
+    </h1>
   </body>
 </html>
