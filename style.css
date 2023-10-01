@@ -195,10 +195,11 @@ ul{
     margin-right: auto;
     width: 50%;
     padding: 1em 2.5em;
-    font-size: 1em;
+    font-size: 2em;
     color: white;
     background: #278cda;
     text-align: middle;
+    border-end-end-radius: 10px;
    
 }
 
