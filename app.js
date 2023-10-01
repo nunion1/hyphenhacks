@@ -32,6 +32,25 @@ if (window.location.pathname=="/index.html" || window.location.pathname==" /hyph
 }
 function myEnable(){
     mainPage=true
+    fetch('https://navy-scandalous-tilapia.glitch.me/api/profiles')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log(data);
+        myData = data;
+        console.log("work")
+        dataRead = true;
+        loadFirst()
+    })
+    .catch(error => {
+        console.log('Fetch error:', error);
+    });
+console.log("test")
+    
 }
 console.log(window.location.pathname)
 if (mainPage){
