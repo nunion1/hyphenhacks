@@ -27,6 +27,8 @@ console.log("2")
 if (window.location.pathname==" /hyphenhacks/index.html"){
     console.log("yay")
     mainPage = true;
+}else{
+    console.log("wrong")
 }
 console.log("MP: ", window.location.pathname)
 if (mainPage){
