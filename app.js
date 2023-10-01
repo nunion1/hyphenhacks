@@ -1,6 +1,7 @@
 var myData;
 var dataRead = false;
 var mainPage = false
+console.log("1")
 try{
     savedPeople = JSON.parse(localStorage.getItem("Saved People"))
     tmp=[]
@@ -21,12 +22,13 @@ console.log("SP",savedPeople)
 // doFetch()
 // function doFetch(){
 console.log("started")
+console.log("2")
 
 if (window.location.pathname=="/index.html"){
     console.log("yay")
     mainPage = true;
 }
-
+console.log("MP: ", window.location.pathname)
 if (mainPage){
 fetch('https://navy-scandalous-tilapia.glitch.me/api/profiles')
     .then(response => {
