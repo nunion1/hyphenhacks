@@ -24,7 +24,7 @@ console.log("SP",savedPeople)
 console.log("started")
 console.log("2")
 
-if (window.location.pathname=="/index.html"){
+if (window.location.pathname==" /hyphenhacks/index.html"){
     console.log("yay")
     mainPage = true;
 }
