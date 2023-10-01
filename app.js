@@ -30,6 +30,9 @@ if (window.location.pathname=="/index.html" || window.location.pathname==" /hyph
 }else{
     console.log("wrong")
 }
+function myEnable(){
+    mainPage=true
+}
 console.log(window.location.pathname)
 if (mainPage){
 fetch('https://navy-scandalous-tilapia.glitch.me/api/profiles')
