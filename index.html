@@ -20,31 +20,28 @@
   </head>
   <body>
 
+<script src="app.js">myTest()</script>
+
+<nav class = "navbar">
 
 
-    <nav class = "navbar">
-        <div class = "burger">
-            <div class = "layer1"></div>
-            <div class = "layer2"></div>
-            <div class = "layer3"></div>
 
         </div>
         
         <div class = "logo">
-          <a class="logo-link" href="index.html" ;><img class="logo-image" src="/Assets/9k.png" /><span style="color: rgb(20, 19, 19); font-size: 1.1em" class="logo-text">FUTURE TUTOR </span></a>
+          <a class="logo-link" href="index.html" ;><img class="logo-image" src="/Assets/9k.png" /><span style="color: rgb(20, 19, 19); font-size: 1.1em" class="logo-text">  FUTURE TUTOR </span></a> 
        </div>
 
         <div class = "menubar">
             <ul class = "list">
-                <li class = "list-items"><a href="/Chat.html"> CHAT </a></li>
-                <img src = "/Assets/C"
-
-                <li class = "list-items"><a href="/Profile.html"> PROFILE </a></li>
-            </ul>
+               <div class = "icons">
+             <a class="icons" href="Profile.html" ;><img class="icons" src="https://media.discordapp.net/attachments/1157713982757548156/1157812750756630538/1144760.png?ex=6519f8a6&is=6518a726&hm=4f848287c33f9d8ed88458950b81f5b2b17882de17c278b43ea3d3126f1db928&=&width=1024&height=1024" /></a>
+          </div>
+       
+        <div class = "icons2">
+          <a class="icons2" href="Chat.html" ;><img class="icons2" src="/Assets/ChatIcon.png" /></a>
         </div>
 
-        <div class = "Profile">
-            <!-- <i class = "" -->
 
             </nav>
 
@@ -53,11 +50,20 @@
         <!-- <button onclick = "loadFirst()" > Begin </button> -->
         <br><br><br><br>
         <section class = "section1">
-            
+
+          
+          <div class="buttons">
+            <button class="leftButton" onclick="loadNext('Left')">
+                <img src="/Assets/LeftArrow.png" alt="Button Image">
+            </button>
+        </div>
+            <button class="rightButton" onclick="saveCurrent()"><img src = "RightArrow.jpeg" alt = "Button Image"></button>
             <div id = "personbox">
+
                 <h1 id="nameEnd"></h1>
-                <!-- <img name=""> -->
+                <img id="imageEnd"></img>
                 <h2 id="schoolEnd"></h2>
+                <h3 id="gradeEnd"></h3>
                 <p id="descriptionEnd"></p>
                 <p id ="classesEnd"></p>
                 <!-- <h2 id = "numberEnd"></h2>
@@ -66,18 +72,34 @@
             <div class="banner">
                 <!-- <h1>SWIPE LEFT OR RIGHT</h1> -->
                 
-                <button id="rightButton" onclick="saveCurrent()"> -> </button>
-                <button id = "leftButton" onclick = "loadNext()"> <- </button>
             </div>
+          </div>
+
         </section>
 
+        <div class = "Matches"><style>
+            p{text-align: center;}
+            </style>
+          <div class = "textInfo">
+                <a class = "matches-link" href="MyMatches.html" ;>      <p>View My Matches</p><img class = "matches-image" /></a>
+            </div>
+            <!-- <button class = "buttonleft">View Matches</button> -->
+            
 
-
-
+        
+        <div class = "textInfo">
+        <style>
+          h1{text-align: center;}
+          </style>
+          <body>
+            <br>
+            <br.
+            <h1>Our mission: Empowering students to unlock their academic potential and build community by learning and meeting new people!</h1>
+        </div>
      
 
 
-    <script type = "text/javascript" src = "app.js"></script>
+    <!-- <script type = "text/javascript" src = "app.js"></script> -->
     <script type = "text/javascript" src= "products.json"></script>
     </nav>
 
@@ -88,7 +110,7 @@
 
     </main>
     <br>
-	<script src="app.js"></script>
+	<!-- <script src="app.js"></script> -->
     <h1>
     </h1>
   </body>

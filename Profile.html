@@ -14,24 +14,28 @@
   <body>
 
     <nav class = "navbar">
-        <div class = "burger">
-            <div class = "layer1"></div>
-            <div class = "layer2"></div>
-            <div class = "layer3"></div>
+
+
+
 
         </div>
         <div class = "logo">
            <a class="logo-link" href="index.html" ;><img class="logo-image" src="Assets/9k.png" /><span style="color: rgb(20, 19, 19); font-size: 1.1em" class="logo-text">FUTURE TUTOR </span></a>
         </div>
 
-        <div class = "menubar">
-            <ul class = "list">
-                <li class = "list-items"><a href="/Chat.html"> CHAT </a></li>
 
+              <div class = "menubar">
+                <ul class = "list">
+                   <div class = "icons">
+                 <a class="icons" href="Profile.html" ;><img class="icons" src="https://media.discordapp.net/attachments/1157713982757548156/1157812750756630538/1144760.png?ex=6519f8a6&is=6518a726&hm=4f848287c33f9d8ed88458950b81f5b2b17882de17c278b43ea3d3126f1db928&=&width=1024&height=1024" /></a>
+              </div>
+           
+            <div class = "icons2">
+              <a class="icons2" href="Chat.html" ;><img class="icons2" src="/Assets/ChatIcon.png" /></a>
+            </div>
 
                 
             </ul>
-        </div>
         </nav>
 
   <div class="inputField">
@@ -39,8 +43,15 @@
       <input type="text" id="userName" name="name"><br><br>
      
       <label for="grade">Grade:</label><br>
-      <input type="text" id="grade" name="grade"><br><br>
-
+      <select name="grade" id="grade">
+        <option value="9th">9th Grade</option>
+        <option value="10th">10th Grade</option>
+        <option value="11th">11th Grade</option>
+        <option value="12th">12th Grade</option>
+        <option value="old">Older</option>
+      </select>
+      <br>
+      <br>
       <label for="school">School:</label><br>
       <input type="text" id="school" name="school"><br><br>
 
@@ -49,15 +60,36 @@
 
       <label for="classes">What classes can you tutor?:</label><br>
       <span><p>
+        <!-- <select name="classes" id="classes">
+          <option value="english">English</option>
+          <option value="science">Science</option>
+          <option value="math">Math</option>
+          <option value="history">History</option>
+          <option value="language">Language</option>
+        </select> -->
         English: 
         <input type="checkbox" id = englishBox> 
         | History: 
         <input type="checkbox" id = historyBox> 
-        | Math:
-        <input type="checkbox" id = mathBox> 
+        | Geometery:
+        <input type="checkbox" id = geometeryBox> 
         <br> 
-        Science:
-        <input type="checkbox" id = scienceBox>
+        Algebra 2:
+        <input type="checkbox" id = algebraBox> 
+        | PreCalculus:
+        <input type="checkbox" id = precalculusBox> 
+        | Calculus:
+        <input type="checkbox" id = calculusBox> 
+        <br>
+        Stats:
+        <input type="checkbox" id = statsBox> 
+        | Biology:
+        <input type="checkbox" id = biologyBox>
+        | Chemistry:
+        <input type="checkbox" id = chemistryBox>
+        <br>
+        Physics:
+        <input type="checkbox" id = physicsBox>
         | Spanish:
         <input type="checkbox" id = spanishBox> 
         | Chinese:
@@ -67,7 +99,7 @@
         <input type="checkbox" id = frenchBox> 
       </p><br><br></span>
 
-      <label for="imageLink">ImageLink:</label><br>
+      <label for="imageLink">Image Link:</label><br>
       <input type="text" id="imageLink" name="imageLink"><br><br>
 
       <label for="phoneNumber">Please enter your phone number | Note: Others will be able to see</label><br>
