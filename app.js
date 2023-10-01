@@ -3,6 +3,13 @@ var dataRead = false;
 var mainPage = false
 try{
     savedPeople = JSON.parse(localStorage.getItem("Saved People"))
+    tmp=[]
+    savedPeople = savedPeople.filter(function (v) {
+        if (tmp.indexOf(v.toString()) < 0) {
+            tmp.push(v.toString());
+            return v;
+        }
+    });
 }
 catch{
     savedPeople=[]
@@ -10,13 +17,6 @@ catch{
 // if (savedPeople==null){
     localSavedPeople = []
 // }
-tmp=[]
-savedPeople = savedPeople.filter(function (v) {
-    if (tmp.indexOf(v.toString()) < 0) {
-        tmp.push(v.toString());
-        return v;
-    }
-});
 console.log("SP",savedPeople)
 // doFetch()
 // function doFetch(){
