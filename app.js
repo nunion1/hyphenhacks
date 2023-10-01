@@ -30,7 +30,7 @@ if (window.location.pathname=="/hyphenhacks/index.html"){
 }else{
     console.log("wrong")
 }
-console.log("MP: ", window.location.pathname)
+console.log(window.location.pathname)
 if (mainPage){
 fetch('https://navy-scandalous-tilapia.glitch.me/api/profiles')
     .then(response => {
