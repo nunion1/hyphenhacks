@@ -1,7 +1,12 @@
 var myData;
 var dataRead = false;
 var mainPage = false
+try{
 savedPeople = JSON.parse(localStorage.getItem("Saved People"))
+}
+catch{
+savedPeople=[]
+}
 // if (savedPeople==null){
     localSavedPeople = []
 // }
