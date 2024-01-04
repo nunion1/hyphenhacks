@@ -104,12 +104,12 @@ async function addData(){
     if (document.getElementById("englishBox").checked){
         classes.push("English")
     }
-    if (document.getElementById("geometeryBox").checked){
-        classes.push("Algebra 2")
+    if (document.getElementById("geometryBox").checked){
+        classes.push("Geometry")
     }
     
     if (document.getElementById("algebraBox").checked){
-        classes.push("Geometry")
+        classes.push("Algebra 2")
     }
     if (document.getElementById("precalculusBox").checked){
         classes.push("PreCalculus")
